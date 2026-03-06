@@ -1,0 +1,138 @@
+# =========================
+
+# Spring Boot / Maven
+
+# =========================
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven wrapper files
+
+.mvn/timing.properties
+
+# =========================
+
+# Logs
+
+# =========================
+
+*.log
+logs/
+log/
+
+# =========================
+
+# OS Files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+
+# Environment / Secrets
+
+# =========================
+
+.env
+.env.local
+.env.development
+.env.production
+
+# =========================
+
+# IntelliJ IDEA
+
+# =========================
+
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# =========================
+
+# Eclipse / STS (Spring Tool Suite)
+
+# =========================
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# =========================
+
+# NetBeans
+
+# =========================
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# =========================
+
+# VS Code
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# Temporary files
+
+# =========================
+
+*.tmp
+*.temp
+*.swp
+*.bak
+*.orig
+
+# =========================
+
+# Java compiled files
+
+# =========================
+
+*.class
+
+# =========================
+
+# Package files
+
+# =========================
+
+*.jar
+*.war
+*.ear
+
+# =========================
+
+# Testing
+
+# =========================
+
+test-output/
+coverage/
+
+# =========================
+
+# Docker
+
+# =========================
+
+docker-compose.override.yml
