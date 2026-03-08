@@ -1,9 +1,12 @@
 package com.ashcode.ashcode.services;
 
+import org.springframework.stereotype.Service;
+
 import com.ashcode.ashcode.contracts.UsageService;
 import com.ashcode.ashcode.dtos.subscription.PlanLimitResponse;
 import com.ashcode.ashcode.dtos.subscription.UsageTodayResponse;
 
+@Service
 public class UsageServiceImplementation implements UsageService {
 
     @Override

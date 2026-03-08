@@ -1,3 +1,19 @@
 spring:
     application:
         name: ashcode
+
+    datasource:
+        url: jdbc:mysql://localhost:3306/ashcode
+        username: root
+        password: Ashish@457
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+                format_sql: true
+                time_zone: Asia/Calcutta

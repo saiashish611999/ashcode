@@ -2,28 +2,49 @@ package com.ashcode.ashcode.entities;
 
 import java.time.Instant;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name = "users", schema = "ashcode")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @jakarta.persistence.Column(name = "id", nullable = false)
     Long id;
 
     String email;
 
     String passwordHash;
 
+    @Column(name = "name", nullable = false)
     String name;
 
     String avatarUrl;
 
+    @CreationTimestamp
     Instant createdAt;
 
+    @UpdateTimestamp
     Instant updatedAt;
 
     Instant deletedAt;
